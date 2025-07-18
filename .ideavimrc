@@ -1,0 +1,128 @@
+map <Space> <Nop>
+let mapleader=" "
+
+set clipboard+=unnamed
+set clipboard+=ideaput
+
+nnoremap \e :e C:\Users\admin\.ideavimrc<CR>
+# nnoremap <Leader>e :e C:\Users\admin\.ideavimrc<CR>
+nnoremap \r :source C:\Users\admin\.ideavimrc<CR>
+nnoremap ts i<CR><Esc>==
+set incsearch
+set ignorecase
+set smartcase
+
+set noerrorbells
+set visualbell
+set NERDTree
+
+"up
+noremap u k
+noremap U K
+"down
+noremap e j
+noremap E J
+"left 
+noremap n h
+noremap N H
+"right
+noremap i l
+"noremap I L
+
+"insert
+noremap m i
+noremap M I
+
+noremap l u
+noremap L U
+noremap h m
+noremap H M
+noremap k n
+noremap K N
+
+noremap j y
+noremap J Y
+noremap o p
+noremap O P
+noremap y o
+noremap Y O
+noremap t f
+noremap T F
+noremap r s
+noremap R S
+noremap s d
+noremap S D
+noremap d c
+noremap D C
+noremap p r
+noremap P R
+""
+nnoremap I $
+nnoremap N ^
+vnoremap I $
+vnoremap N ^
+inoremap I $
+inoremap N ^
+noremap ; :
+noremap c x
+noremap C X
+noremap xx zz
+" esc in insert & visual mode
+" inoremap <C-s> <esc>
+" vnoremap <C-s> <esc>
+" esc in command mode
+" cnoremap <C-s> <C-C>
+
+noremap <C-p> <C-r>
+noremap <C-e> <C-f>
+noremap <C-u> <C-b>
+
+nnoremap <A-e> :m .+1<CR>==
+nnoremap <A-u> :m .-2<CR>==
+inoremap <A-e> <Esc>:m .+1<CR>==gi
+vnoremap <A-e> :m '>+1<CR>gv=gv
+inoremap <A-u> <Esc>:m .-2<CR>==gi
+vnoremap <A-u> :m '<-2<CR>gv=gv
+
+nnoremap gb :action Back<CR>
+nnoremap gf :action Forward<CR>
+
+nnoremap gs :action GotoSymbol<CR>
+nnoremap gc :action GotoClass<CR>
+nnoremap gi :action GotoImplementation<CR>
+nnoremap gd :action GotToDeclaration<CR>
+nnoremap gp :action GotToSuperMethod<CR>
+
+
+nnoremap <Leader>q :action CloseEditor<CR>
+nnoremap <Leader>qa :action CloseAllEditors<CR>
+nnoremap <TAB> :action NextTab<CR>
+nnoremap <S-TAB> :action PreviousTab<CR>
+//
+nnoremap zc :action CollapseRegionRecursively<CR>
+nnoremap zo :action ExpandRegionRecursively<CR>
+
+
+nnoremap <Leader>wv :action SplitVertically<CR>
+nnoremap <Leader>ws :action SplitHorizontally<CR>
+nnoremap <Leader>wq :action Unsplit<CR>
+nnoremap <Leader>wp :action MoveEditorToOppositeTabGroup<CR>
+
+noremap <Leader>wm <C-w>h
+noremap <Leader>wi <C-w>l
+noremap <Leader>wn <C-w>j
+noremap <Leader>we <C-w>k
+
+nnoremap <leader>p  :NERDTreeToggle<CR>
+nnoremap <leader>pf :NERDTreeFocus<CR>
+"nnoremap <c-/> :action Replace<CR>
+"nnoremap <leader>c :action CommentByLineComment<CR>
+nnoremap <leader>r :action Refactorings.QuickListPopupAction<CR>
+nnoremap <Leader>= :action ReformatCode<CR>
+vnoremap <Leader>= :action ReformatCode<CR>
+
+nnoremap <Leader>u :action FindUsages<CR>
+nnoremap <Leader>bs :action Bookmarks<CR>
+nnoremap <Leader>bt :action ToggleBookmark<CR>
+nnoremap <Leader>bn :action GotoNextBookmark<CR>
+nnoremap <Leader>be :action GotoPreviousBookmark<CR>
