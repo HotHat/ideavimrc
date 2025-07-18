@@ -16,6 +16,7 @@ set noerrorbells
 set visualbell
 set NERDTree
 
+"colemak-dh key remap
 "up
 noremap u k
 noremap U K
@@ -27,7 +28,7 @@ noremap n h
 noremap N H
 "right
 noremap i l
-"noremap I L
+noremap I L
 
 "insert
 noremap m i
@@ -77,6 +78,7 @@ noremap <C-p> <C-r>
 noremap <C-e> <C-f>
 noremap <C-u> <C-b>
 
+"line move
 nnoremap <A-e> :m .+1<CR>==
 nnoremap <A-u> :m .-2<CR>==
 inoremap <A-e> <Esc>:m .+1<CR>==gi
@@ -84,9 +86,9 @@ vnoremap <A-e> :m '>+1<CR>gv=gv
 inoremap <A-u> <Esc>:m .-2<CR>==gi
 vnoremap <A-u> :m '<-2<CR>gv=gv
 
+"class reference jump
 nnoremap gb :action Back<CR>
 nnoremap gf :action Forward<CR>
-
 nnoremap gs :action GotoSymbol<CR>
 nnoremap gc :action GotoClass<CR>
 nnoremap gi :action GotoImplementation<CR>
@@ -98,16 +100,15 @@ nnoremap <Leader>q :action CloseEditor<CR>
 nnoremap <Leader>qa :action CloseAllEditors<CR>
 nnoremap <TAB> :action NextTab<CR>
 nnoremap <S-TAB> :action PreviousTab<CR>
-//
+
 nnoremap zc :action CollapseRegionRecursively<CR>
 nnoremap zo :action ExpandRegionRecursively<CR>
 
-
+"window
 nnoremap <Leader>wv :action SplitVertically<CR>
 nnoremap <Leader>ws :action SplitHorizontally<CR>
 nnoremap <Leader>wq :action Unsplit<CR>
 nnoremap <Leader>wp :action MoveEditorToOppositeTabGroup<CR>
-
 noremap <Leader>wm <C-w>h
 noremap <Leader>wi <C-w>l
 noremap <Leader>wn <C-w>j
@@ -120,8 +121,9 @@ nnoremap <leader>pf :NERDTreeFocus<CR>
 nnoremap <leader>r :action Refactorings.QuickListPopupAction<CR>
 nnoremap <Leader>= :action ReformatCode<CR>
 vnoremap <Leader>= :action ReformatCode<CR>
-
 nnoremap <Leader>u :action FindUsages<CR>
+
+"Bookmarks
 nnoremap <Leader>bs :action Bookmarks<CR>
 nnoremap <Leader>bt :action ToggleBookmark<CR>
 nnoremap <Leader>bn :action GotoNextBookmark<CR>
