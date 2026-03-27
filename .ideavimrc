@@ -8,6 +8,7 @@ nnoremap \e :e C:\Users\admin\.ideavimrc<CR>
 # nnoremap <Leader>e :e C:\Users\admin\.ideavimrc<CR>
 nnoremap \r :source C:\Users\admin\.ideavimrc<CR>
 nnoremap ts i<CR><Esc>==
+nnoremap to o<Esc>==
 set incsearch
 set ignorecase
 set smartcase
@@ -58,12 +59,12 @@ noremap D C
 noremap p r
 noremap P R
 ""
-nnoremap I $
-nnoremap N ^
-vnoremap I $
-vnoremap N ^
-inoremap I $
-inoremap N ^
+"nnoremap > $
+"nnoremap < ^
+"vnoremap > $
+"vnoremap < ^
+" inoremap I $
+" inoremap N ^
 noremap ; :
 noremap c x
 noremap C X
@@ -100,6 +101,7 @@ nnoremap <Leader>q :action CloseEditor<CR>
 nnoremap <Leader>qa :action CloseAllEditors<CR>
 nnoremap <TAB> :action NextTab<CR>
 nnoremap <S-TAB> :action PreviousTab<CR>
+nnoremap <Leader>rf :action RecentFiles<CR>
 
 nnoremap zc :action CollapseRegionRecursively<CR>
 nnoremap zo :action ExpandRegionRecursively<CR>
